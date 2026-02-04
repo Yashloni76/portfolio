@@ -13,6 +13,7 @@
     border-radius: 12.5px;
     max-width: 250px;
     margin : 10px auto;
+    margin-top: 25px;
 }
 .mainbody{
     color: white;
@@ -28,7 +29,7 @@
     margin: 0;
     color: #ffffff;
     text-align: left;
-    font-size: 130px;
+    font-size: 96px;
     line-height: 70px;
     font-style: bold;
 }
@@ -42,18 +43,18 @@
 .profile{
     display: flex;
     justify-content: left;
-    margin-left: 339px;
-    margin-top: -160px;
+    margin-left: 334px;
+    margin-top: -170px;
     border-radius: 15px;
     
 }
 .pfpbg{
-    width: 330px;
+    width: 320px;
     height: 600px;
     background-color: #ffffff;
     border-radius: 15px;
     position: absolute;
-    top: 170px;
+    top: 182px;
     left: 162px;
     z-index: -1;
     left: 300px;
