@@ -1,0 +1,60 @@
+.header-icons{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+}
+.header{
+    display : flex;
+    justify-content: center;
+    background-color: #1c1c1c;
+    padding: 10px;
+    border-radius: 12.5px;
+    max-width: 250px;
+    margin : 10px auto;
+}
+.mainbody{
+    color: white;
+    display: flex;
+    justify-content: right;
+    margin-top: 130px;
+    margin-right: 200px;
+    font-size: 25px;
+     flex-direction: column;
+    align-items: flex-end;
+}
+.name h1:first-child{
+    margin: 0;
+    color: #ffffff;
+    text-align: left;
+    font-size: 130px;
+    line-height: 70px;
+    font-style: bold;
+}
+.name h1:last-child{
+    color: #666666;
+    margin: 0;
+    text-align: left;
+    font-size: 100px;
+    font-style: italic;
+}
+.profile{
+    display: flex;
+    justify-content: left;
+    margin-left: 339px;
+    margin-top: -160px;
+    border-radius: 15px;
+    
+}
+.pfpbg{
+    width: 330px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: absolute;
+    top: 170px;
+    left: 162px;
+    z-index: -1;
+    left: 300px;
+}
