@@ -28,10 +28,11 @@
 .name h1:first-child{
     margin: 0;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     font-size: 96px;
     line-height: 70px;
     font-style: bold;
+    margin-right: 50px;
 }
 .name h1:last-child{
     color: #666666;
@@ -39,12 +40,13 @@
     text-align: left;
     font-size: 100px;
     font-style: italic;
+    
 }
 .profile{
     display: flex;
     justify-content: left;
-    margin-left: 334px;
-    margin-top: -170px;
+    margin-left: 332px;
+    margin-top: -245px;
     border-radius: 15px;
     
 }
@@ -58,4 +60,14 @@
     left: 162px;
     z-index: -1;
     left: 300px;
+}
+.about p{
+    max-width: 520px;
+    display: flex;
+    justify-content: left;
+    margin-right: 125px;
+    color: #998f8f;
+    font-size: 19px;
+    margin-top: -10px;
+    
 }
