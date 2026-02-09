@@ -71,3 +71,12 @@
     margin-top: -10px;
     
 }
+.ownname h2{
+    display: flex;
+    justify-content: left;
+    margin-left: 350px;
+    color: #a31919;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 15px;
+}
