@@ -74,9 +74,9 @@
 .ownname h2{
     display: flex;
     justify-content: left;
-    margin-left: 350px;
-    color: #a31919;
+    margin-left: 390px;
+    color: #010101;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 15px;
 }
