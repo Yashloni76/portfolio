@@ -3,23 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* body part */
 body {
   background-color: #0d0d14;
-  background-image:
-  radial-gradient(ellipse at 80% 20%, #a855f720 0%, transparent 50%),
-  radial-gradient(ellipse at 20% 80%, #6366f118 0%, transparent 50%);
   color: #e2e2f0;
   font-family: 'Syne', sans-serif;
 }
+/* NAVBAR */
 nav {
   position: fixed;
-  top: 0;
+  
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   background-color: #0d0d14;
   border-bottom: 1px solid #333;
   z-index: 100;
@@ -47,7 +44,7 @@ nav ul a:hover {
   color: #ffffff;
 }
 
-
+/* HERO SECTION which is the main introduction area */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -83,47 +80,9 @@ nav ul a:hover {
   max-width: 480px;
   margin-bottom: 2rem;
 }
-.status-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1.25rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
 
-.status-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #22c55e12;
-  border: 1px solid #22c55e40;
-  border-radius: 99px;
-  padding: 0.35rem 0.9rem;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.78rem;
-  color: #22c55e;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #22c55e;
-  animation: blink 1.5s ease-in-out infinite;
-}
-
-.loc-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.78rem;
-  color: #7b7b9d;
-}
-
-.loc-badge i { color: #a855f7; }
 .btn {
+
   display: inline-block;
   padding: 0.75rem 2rem;
   background-color: #a855f7;
@@ -132,10 +91,7 @@ nav ul a:hover {
   border-radius: 8px;
   font-size: 0.95rem;
 }
-
-.btn:hover {
-  background-color: #9333ea;
-}
+/* ABOUT SECTION*/
 #about {
   padding: 5rem 4rem;
 }
@@ -197,6 +153,39 @@ nav ul a:hover {
   color: #7b7b9d;
 }
 
+/* SKILLS SECTION */
+
+#skills {
+  padding: 5rem 4rem;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;  /* creates a grid layout like side by side */
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 2.2rem;
+}
+
+.skill-chip {
+  background-color: #0c0c13;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  color: #7b7b9d;
+}
+
+.skill-chip:hover {
+  border-color: #9141c7;
+  color: #ffffff;
+}
 #certifications {
   padding: 5rem 4rem;
   
@@ -263,37 +252,6 @@ nav ul a:hover {
 }
 
 
-#skills {
-  padding: 5rem 4rem;
-}
-
-#skills h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 2rem;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 2.2rem;
-}
-
-.skill-chip {
-  background-color: #0c0c13;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  font-family: 'Fira Code', monospace;
-  font-size: 1rem;
-  color: #7b7b9d;
-}
-
-.skill-chip:hover {
-  border-color: #a855f7;
-  color: #ffffff;
-}
 #projects {
   padding: 5rem 4rem;
 }
@@ -377,6 +335,128 @@ nav ul a:hover {
   margin-bottom: 2rem;
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  max-width: 980px;
+  margin: 0 auto 2rem;
+  text-align: left;
+  align-items: stretch;
+}
+
+.contact-form,
+.map-card {
+  background: linear-gradient(160deg, #111120 0%, #0c0c13 70%);
+  border: 1px solid #2f2f45;
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.contact-form:hover,
+.map-card:hover {
+  transform: translateY(-3px);
+  border-color: #4b4670;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+}
+
+.contact-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1rem;
+  margin-bottom: 0.45rem;
+}
+
+.contact-card-title i {
+  color: #a855f7;
+}
+
+.contact-card-text {
+  color: #8e8eab;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  color: #e2e2f0;
+  font-size: 0.86rem;
+  margin-bottom: 0.38rem;
+  font-family: 'Fira Code', monospace;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #31314a;
+  border-radius: 8px;
+  background-color: #131321;
+  color: #e2e2f0;
+  padding: 0.76rem 0.9rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.9rem;
+  font-family: 'Syne', sans-serif;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+  background-color: #171729;
+  outline: none;
+}
+
+.send-btn {
+  width: 100%;
+  border: 1px solid #a855f7;
+  background: linear-gradient(90deg, #a855f7 0%, #7f42bb 100%);
+  color: #ffffff;
+  padding: 0.72rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.send-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(127, 66, 187, 0.35);
+}
+
+.map-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.45rem;
+}
+
+.map-card {
+  max-width: 360px;
+  width: 100%;
+  justify-self: center;
+}
+
+.contact-form {
+  max-width: 360px;
+  width: 100%;
+  justify-self: center;
+}
+
+.map-card iframe {
+  width: 92%;
+  min-height: 220px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px #2f2f45;
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(0.15) invert(0.9) hue-rotate(180deg) saturate(0.8) brightness(0.9) contrast(1.05);
+}
+
 .email-link {
   font-family: 'Fira Code', monospace;
   font-size: 1.1rem;
@@ -429,4 +509,19 @@ footer span {
 .social-btn:hover {
   border-color: #a855f7;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  #contact {
+    padding: 4.5rem 1.2rem;
+  }
+
+  .map-card iframe {
+    width: 100%;
+    min-height: 190px;
+  }
 }
